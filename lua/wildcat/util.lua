@@ -8,7 +8,7 @@ local M = {
         },
         jboss = {
             LABEL = "JBoss",
-            BASH = "/bin/standalone.sh"
+            BASH = "/bin/standalone.sh",
             BATCH = "/bin/standalone.bat"
         }
     }
