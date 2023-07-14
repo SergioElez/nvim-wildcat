@@ -3,11 +3,13 @@ local M = {
         WILDCAT_SERVER_CONSOLE = "wildcat_server_console",
         tomcat = {
             LABEL = "Tomcat",
-            BASH = "/bin/catalina.sh run"
+            BASH = "/bin/catalina.sh run",
+            BATCH = "/bin/catalina.bat run"
         },
         jboss = {
             LABEL = "JBoss",
             BASH = "/bin/standalone.sh"
+            BATCH = "/bin/standalone.bat"
         }
     }
 }
