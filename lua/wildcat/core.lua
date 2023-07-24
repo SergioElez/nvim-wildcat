@@ -14,7 +14,8 @@ local M = {}
 
 local function execute(opts)
     local path = opts.home .. opts.sh
-    local console = "sp | resize " .. servers.console_size .. " | start | terminal " .. path
+    --local console = "sp | resize " .. servers.console_size .. " | start | terminal " .. path
+    local console = "start | TermExec cmd=\" " .. path .. "\""
     vim.cmd(console)
     vim.cmd("file " .. util.const.WILDCAT_SERVER_CONSOLE)
 
