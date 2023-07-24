@@ -19,10 +19,10 @@ local function execute(opts)
     vim.cmd(console)
     vim.cmd("file " .. util.const.WILDCAT_SERVER_CONSOLE)
 
-    local _, error = pcall(function() require('lualine') end)
-    if not error then
-        require'lualine'.hide()
-    end
+    --local _, error = pcall(function() require('lualine') end)
+    --if not error then
+     --   require'lualine'.hide()
+    --end
 
     vim.opt_local.laststatus = 3
     local stl = string.format("%%#Normal# %s Console   %s", util.get_server_icon(opts.label), opts.deploys)
