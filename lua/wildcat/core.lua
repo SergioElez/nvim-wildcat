@@ -49,7 +49,7 @@ function M.wildcat_up()
         execute {
             home = tomcat.home,
             -- Change if u are using windows or linux
-            sh = util.const.tomcat.BASH,
+            sh = util.const.tomcat.BATCH,
             label = util.const.tomcat.LABEL,
             deploys = util.read_from(tomcat_deploys)
         }
